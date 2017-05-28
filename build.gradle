@@ -1,0 +1,12 @@
+plugins {
+    id 'org.echocat.golang' version '0.1.16'   	
+}
+
+group 'github.com/thomasjungblut/pongo'
+
+golang {
+    platforms = "windows-amd64,linux-amd64,darwin-amd64"
+    dependencies {
+        build 'github.com/nsf/termbox-go'
+    }
+}
